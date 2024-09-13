@@ -16,7 +16,7 @@ hinzuzufügen?
 ```php
 wp_remote_get('https://shop-b-url.com/wp-json/wc/v3/orders')
 ```
-> Die in parametern könnte dann festgelegt werden was geladen werden sollen:
+> Mit Parametern könnte dann festgelegt werden was geladen werden sollen:
 ```php
     $user_id = get_current_user_id();
     $args = [
@@ -36,6 +36,9 @@ Elementor-Seiten im Shop A angezeigt werden. Eine Elementor-Seite soll die Beste
 Benutzer auflisten, und eine Seite soll die Details einer bestimmten Bestellung anzeigen.
 Wie würdest du dies umsetzen?
 > Ich würde zwei Elementor Widgets erstellen. Eins für die Darstellung der Bestellungen in einer Liste. Das zweite um die Details zur Bestellung anzuzeigen.
+```php
+class Elementor_External_Orders_Widget extends \Elementor\Widget_Base
+```
 
 Bonusfrage 2: Shop B hat nur wenige Server-Ressourcen und kann keine belastenden
 laufenden Datenbankabfragen verarbeiten. Wie lässt sich diese Aufgabe umsetzen, ohne
