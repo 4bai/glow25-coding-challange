@@ -53,6 +53,11 @@ wenig wie möglich oder keine zusätzlichen Daten in die Datenbank von Shop A ei
 > Sollte das nicht reichen, können durch eine Datenbank Replikation auf einen anderen Server, die Bestellungen per sql-query geladen werden. 
 Es müssten nur die tabellen wp_posts und wp_meta repliziert werden.
 
+### High Availability Architektur
+Sollte der Load noch höher sein, könnten auch die Daten auf Clustern verteilt werden.
+
+Siehe: https://cloud.google.com/architecture/architectures-high-availability-mysql-clusters-compute-engine?hl=de
+
 Es reicht aus, nur die erforderliche Frage zu beantworten, aber wir wären beeindruckt, wenn
 du auch Antworten auf die Bonusfragen liefern könntest.
 
