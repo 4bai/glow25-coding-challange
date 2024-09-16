@@ -49,8 +49,8 @@ wenig wie möglich oder keine zusätzlichen Daten in die Datenbank von Shop A ei
 '_fields' => 'id,date_created,total,currency,status'
 ```
 > Wenn es viele Bestellungen pro Kunden gibt kann auch durch Pagination der Load noch reduziert werden.
-
-> Sollte das nicht reichen, können durch eine Datenbank Replikation auf einen anderen Server die Bestellungen per sql-query geladen werden. 
+### Replikation 
+> Sollte das nicht reichen, können durch eine Datenbank Replikation auf einen anderen Server, die Bestellungen per sql-query geladen werden. 
 Es müssten nur die tabellen wp_posts und wp_meta repliziert werden.
 
 Es reicht aus, nur die erforderliche Frage zu beantworten, aber wir wären beeindruckt, wenn
