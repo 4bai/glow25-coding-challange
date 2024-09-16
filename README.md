@@ -50,7 +50,7 @@ wenig wie möglich oder keine zusätzlichen Daten in die Datenbank von Shop A ei
 ```
 > Wenn es viele Bestellungen pro Kunden gibt kann auch durch Pagination der Load noch reduziert werden.
 
-> Sollte das nicht reichen kann die durch eine Datenbank Replikation nur der benötigten Daten in einer eigenen Datenbank (aus wp_posts und wp_meta) direkt auf dem Server von Shop A per query die benötigeten Daten geladen werden.
+> Sollte das nicht reichen kann durch eine Datenbank Replikation nur der benötigten Daten in einer eigenen Datenbank (aus wp_posts und wp_meta) direkt auf dem DB Server von Shop A per sql-query geladen werden.
 
 Es reicht aus, nur die erforderliche Frage zu beantworten, aber wir wären beeindruckt, wenn
 du auch Antworten auf die Bonusfragen liefern könntest.
